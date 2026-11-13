@@ -38,16 +38,22 @@
     font: 400 17px/1.45 "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     -webkit-font-smoothing: antialiased;
   }
-  a { color: var(--coral); text-decoration: none; }
-  a:hover { text-decoration: underline; }
+  a { color: var(--coral); text-decoration: none; transition: color .15s; }
+  a:hover { color: var(--peach-top); text-decoration: underline; text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--coral); outline-offset: 3px; border-radius: 4px; }
+  footer nav a { display: inline-block; transition: color .15s, transform .12s; }
+  footer nav a:active { transform: scale(.94); }
 
   .page { position: relative; max-width: 1200px; margin: 0 auto;
           padding: 40px max(16px, env(safe-area-inset-right)) 32px max(16px, env(safe-area-inset-left)); }
 
   .lang { position: absolute; top: 20px; right: max(16px, env(safe-area-inset-right));
           font-weight: 600; font-size: 14px; color: var(--muted); }
-  .lang button { all: unset; cursor: pointer; padding: 4px 6px; border-radius: 8px; }
+  .lang button { all: unset; cursor: pointer; padding: 4px 6px; border-radius: 8px;
+                 transition: color .15s, background-color .15s, transform .12s; }
   .lang button[aria-pressed="true"] { color: var(--ink); }
+  .lang button:hover { color: var(--ink); background: #FF8A6B26; }
+  .lang button:active { transform: scale(.9); }
   .lang button:focus-visible { outline: 2px solid var(--coral); }
 
   /* Lava-Tafel: the one dot-matrix sign per screen. */
@@ -74,13 +80,24 @@
                box-shadow: 0 5px 0 var(--peach-edge); }
   .pill.side { background: linear-gradient(var(--plum-top), var(--plum-bottom)); color: var(--ink);
                box-shadow: 0 5px 0 var(--plum-edge); }
+  /* Not links until launch, so no pointer cursor: a hover or tap only makes them wobble. */
+  .pill.wobble { animation: wobble .5s ease-in-out; }
+  @keyframes wobble {
+    0%, 100% { transform: rotate(0); } 20% { transform: rotate(-3deg) scale(1.03); }
+    45% { transform: rotate(2.5deg) scale(1.03); } 70% { transform: rotate(-1.5deg); } 85% { transform: rotate(.8deg); }
+  }
   .date { margin-top: 18px; font-weight: 600; font-size: 15px; color: #FFFFFFB0; }
 
-  .shot { position: relative; margin-top: 48px; }
+  .shot { position: relative; margin-top: 48px; perspective: 1400px; }
   .shot img {
     position: relative; z-index: 1; display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover;
     border-radius: 32px; outline: 1.5px solid var(--rim); outline-offset: -1.5px; box-shadow: 0 8px 0 var(--edge);
+    transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateY(var(--lift, 0px));
+    transition: transform .5s cubic-bezier(.2, .8, .2, 1), box-shadow .3s;
   }
+  /* Tilt toward the mouse (set from the script, fine pointers only). */
+  .shot.tilt img { --lift: -6px; transition: transform .12s ease-out, box-shadow .3s;
+                   box-shadow: 0 14px 0 var(--edge), 0 24px 48px #00000066; }
 
   .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 64px; }
   .card {
@@ -106,7 +123,15 @@
   main, footer, .tafel { position: relative; z-index: 1; }   /* content above the drops */
   .lang { z-index: 2; }
   @keyframes drift { from { transform: translateY(0) rotate(0); } to { transform: translateY(-14px) rotate(4deg); } }
-  @media (prefers-reduced-motion: reduce) { .drop, .bubble { animation: none; } }
+  /* Mouse parallax: `translate` composes with the drift's `transform`; --d is each layer's depth. */
+  .drop, .bubble { translate: calc(var(--mx, 0) * var(--d, 20px)) calc(var(--my, 0) * var(--d, 20px));
+                   transition: translate .8s cubic-bezier(.2, .8, .2, 1); }
+  .drop.peach { --d: 28px; } .drop.plum { --d: -22px; } .bubble { --d: 44px; }
+  @media (prefers-reduced-motion: reduce) {
+    .drop, .bubble, .pill.wobble { animation: none; }
+    .drop, .bubble { translate: none; }
+    .shot img { transform: none !important; }
+  }
 
   @media (max-width: 860px) {
     .cards { grid-template-columns: 1fr; gap: 28px; margin-top: 48px; }
@@ -211,6 +236,44 @@
       });
     });
   })();
+
+  // Store pills wobble on hover (mouse) or tap (touch); restarting the class replays the animation.
+  document.querySelectorAll(".pill").forEach(function (p) {
+    function wobble() { p.classList.remove("wobble"); void p.offsetWidth; p.classList.add("wobble"); }
+    p.addEventListener("pointerenter", function (e) { if (e.pointerType === "mouse") wobble(); });
+    p.addEventListener("pointerdown", function (e) { if (e.pointerType !== "mouse") wobble(); });
+    p.addEventListener("animationend", function () { p.classList.remove("wobble"); });
+  });
+  // Lets iOS Safari show :active on the links and language buttons.
+  document.addEventListener("touchstart", function () {}, { passive: true });
+
+  // Image tilt and lava parallax follow the mouse only: phones have no hover, and device tilt
+  // would need a motion-permission prompt.
+  if (matchMedia("(hover: hover) and (pointer: fine)").matches &&
+      !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    var shot = document.querySelector(".shot"), img = shot.querySelector("img"), page = document.querySelector(".page");
+    shot.addEventListener("pointermove", function (e) {
+      var r = img.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+      shot.classList.add("tilt");
+      img.style.setProperty("--ry", (x * 7).toFixed(2) + "deg");
+      img.style.setProperty("--rx", (-y * 5).toFixed(2) + "deg");
+    });
+    shot.addEventListener("pointerleave", function () {
+      shot.classList.remove("tilt");
+      img.style.removeProperty("--rx"); img.style.removeProperty("--ry");
+    });
+    var queued = false, mx = 0, my = 0;
+    window.addEventListener("pointermove", function (e) {
+      mx = e.clientX / innerWidth * 2 - 1; my = e.clientY / innerHeight * 2 - 1;
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(function () {
+        page.style.setProperty("--mx", mx.toFixed(3)); page.style.setProperty("--my", my.toFixed(3));
+        queued = false;
+      });
+    });
+  }
 </script>
 </body>
 </html>
