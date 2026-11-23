@@ -16,22 +16,17 @@
   h1 { font-size: 28px; margin: 0 0 4px; }
   h2 { font-size: 20px; margin: 36px 0 8px; border-top: 1px solid var(--rule); padding-top: 24px; }
   h3 { font-size: 16px; margin: 20px 0 4px; }
-  h1#en { margin-top: 64px; padding-top: 32px; border-top: 2px solid var(--rule); }
   p, li { margin: 6px 0; }
   .muted { color: var(--muted); font-size: 14px; }
   a { color: var(--accent); }
   nav a { margin-right: 16px; }
   .todo { background: #ffe08a; color: #2a2118; padding: 0 4px; border-radius: 3px; }
-  table { border-collapse: collapse; width: 100%; font-size: 15px; margin: 8px 0; }
-  th, td { text-align: left; vertical-align: top; padding: 6px 8px 6px 0; border-bottom: 1px solid var(--rule); }
-  th { font-weight: 600; }
-  .scroll { overflow-x: auto; }
 </style>
 </head>
 <body>
 
 <h1>Clawit! – Datenschutzerklärung</h1>
-<p class="muted">Stand: <span class="todo">[Veröffentlichungsdatum]</span> · <a href="#en">English version below</a> · <a href="../imprint/">Impressum</a></p>
+<p class="muted">Stand: 8. November 2026 · <a href="#en">English version below</a> · <a href="../imprint/">Impressum</a></p>
 
 <h2>1. Wer ist verantwortlich?</h2>
 <p>
@@ -39,291 +34,152 @@
   Georg-Raloff-Ring 28, 22309 Hamburg, Deutschland<br>
   E-Mail: <a href="mailto:clawit.app@gmail.com">clawit.app@gmail.com</a>
 </p>
-<p>Ich entwickle Clawit! und biete es in den App-Stores an. Damit bin ich für die Verarbeitung personenbezogener Daten im Zusammenhang mit Clawit! verantwortlich. Einen Datenschutzbeauftragten habe ich nicht bestellt; dazu bin ich nicht verpflichtet. Für alle Fragen zum Datenschutz und zur Ausübung deiner Rechte erreichst du mich unter der oben genannten E-Mail-Adresse.</p>
+<p>Clawit! wird als Privatperson entwickelt und veröffentlicht. Für alle Fragen zum Datenschutz und zur Ausübung deiner Rechte erreichst du mich unter der oben genannten E-Mail-Adresse.</p>
 
 <h2>2. Kurz gesagt</h2>
 <ul>
-  <li>Du kannst Clawit! ohne Namen und ohne E-Mail-Adresse spielen. Für deinen Spielstand legt die App eine zufällig erzeugte Spieler-ID an. Sie verrät nicht, wer du bist, ist aber trotzdem ein personenbezogenes (pseudonymes) Datum, kein anonymes.</li>
-  <li>Clawit! fragt einmal nach deinem Geburtsjahr. Es bleibt auf deinem Gerät. Im Zweifel behandelt dich die App als jünger, nie als älter.</li>
+  <li>Du brauchst kein Konto, keine E-Mail und keinen Namen. Clawit! legt im Hintergrund ein anonymes Konto an, damit dein Spielstand gesichert wird.</li>
+  <li>Clawit! fragt einmal nach deinem Geburtsjahr. Es bleibt auf deinem Gerät und entscheidet nur, welche Fragen das Spiel dir stellt.</li>
   <li>Spielstatistiken werden nur gesendet, wenn du mindestens 16 bist und ausdrücklich zustimmst.</li>
-  <li>Werbung siehst du nur, wenn du selbst ein Video für Extra-Versuche startest. Auf dich zugeschnittene Werbung gibt es nur ab 16 und nur mit deiner Einwilligung. Auch bei nicht zugeschnittener Werbung verarbeitet Google technische Daten wie deine IP-Adresse (siehe 3.4).</li>
-  <li>Absturzberichte enthalten keine Spieler-ID und keine Werbe-ID. Deine IP-Adresse wird dabei übertragen, aber nicht gespeichert.</li>
-  <li>Deine Antworten kannst du jederzeit in den Einstellungen unter „Datenschutz“ ändern. Daten werden nicht verkauft.</li>
-  <li>„Spielstand löschen“ in den Einstellungen löscht dein Spielkonto und deinen Spielstand auch auf dem Server. Was das genau umfasst und was nicht, steht in Abschnitt 6.</li>
+  <li>Werbung siehst du nur, wenn du selbst ein Video für Extra-Versuche startest. Auf dich zugeschnittene Werbung gibt es nur ab 16 und nur mit deiner Zustimmung. Sonst zeigt Google eingeschränkte Werbung ohne Zugriff auf dein Gerät.</li>
+  <li>Absturzberichte werden ohne Nutzer-ID und ohne IP-Adresse gespeichert.</li>
+  <li>Deine Antworten kannst du jederzeit in den Optionen unter „Datenschutz“ ändern. Daten werden nicht verkauft.</li>
+  <li>„Spielstand löschen“ in den Optionen löscht dein anonymes Konto und deinen Spielstand auch auf dem Server.</li>
 </ul>
 
 <h2>3. Welche Daten verarbeitet werden</h2>
 
 <h3>3.1 Cloud-Spielstand (immer)</h3>
-<p>Clawit! speichert deinen Spielstand auf einem Server. So bleibt deine Sammlung auf einem zweiten Gerät erhalten, und der Spieltag richtet sich nach der Serverzeit statt nach der Geräteuhr. Dabei werden verarbeitet:</p>
+<p>Damit deine Sammlung eine Neuinstallation oder ein zweites Gerät übersteht, speichert Clawit! deinen Spielstand auf einem Server. Dabei werden verarbeitet:</p>
 <ul>
-  <li>eine zufällig erzeugte Spieler-ID und ein Anmelde-Token. Auf dem Gerät liegen sie unter iOS im Schlüsselbund, unter Android im App-Speicher,</li>
-  <li>dein Spielstand: gewonnene Preise, Fortschritt, Einstellungen deiner Sammlung, gespielte Tage, Bestwerte, Zählstände deiner Versuche,</li>
+  <li>eine zufällig erzeugte, anonyme Nutzer-ID und ein Anmelde-Token (auf dem Gerät im iOS-Schlüsselbund bzw. im App-Speicher),</li>
+  <li>dein Spielstand: gewonnene Preise, Fortschritt, Einstellungen deiner Sammlung, gespielte Tage, Bestwerte,</li>
   <li>eine zufällige Installations-ID, damit Versuche pro Tag über mehrere Geräte richtig gezählt werden,</li>
-  <li>technisch bedingt deine IP-Adresse und der Zeitpunkt jeder Anfrage (Server-Protokolle).</li>
+  <li>technisch bedingt deine IP-Adresse und der Zeitpunkt der Anfrage (Server-Protokolle); die Serverzeit wird außerdem genutzt, damit der Spieltag nicht durch Verstellen der Geräteuhr umgangen werden kann.</li>
 </ul>
-<p>Nach einer Neuinstallation findet die App deinen Spielstand unter iOS über den Schlüsselbund wieder. Unter Android klappt das nur, wenn die Android-Sicherung deines Google-Kontos eingeschaltet ist.</p>
-<p><strong>Anbieter:</strong> Supabase (Supabase Pte. Ltd., Singapur, als Vertragspartner, und Supabase Inc., USA) als Auftragsverarbeiter (<a href="https://supabase.com/privacy">Datenschutz von Supabase</a>). Die Datenbank liegt in der EU (Irland, Amazon Web Services, Region eu-west-1). Zugriffe von außerhalb der EU, etwa durch Support oder Unterauftragsverarbeiter, sind nicht ausgeschlossen. Dafür gelten die EU-Standardvertragsklauseln (siehe Abschnitt 5).<br>
-<strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO. Der Cloud-Spielstand und die Serverzeit sind Teil des Spiels, das du nutzt: Ohne sie lassen sich Versuche pro Tag und Spieltage nicht fair zählen. Spieler-ID, Anmelde-Token und Installations-ID werden auf deinem Gerät gespeichert, weil das für diesen Dienst unbedingt erforderlich ist (§ 25 Abs. 2 Nr. 2 TDDDG).<br>
-<strong>Speicherdauer:</strong> Spielstand, Spieler-ID und Installations-ID, bis du den Spielstand löschst oder mich um Löschung bittest. Server-Protokolle höchstens 7 Tage. Datenbank-Sicherungskopien höchstens 7 Tage.</p>
+<p><strong>Anbieter:</strong> Supabase Inc., USA, als Auftragsverarbeiter. Die Datenbank liegt in der EU (Irland, AWS eu-west-1). Für mögliche Zugriffe aus den USA gelten die EU-Standardvertragsklauseln.<br>
+<strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Bereitstellung des Spiels, das du nutzt) und § 25 Abs. 2 Nr. 2 TDDDG (für den Dienst unbedingt erforderliche Speicherung auf dem Gerät).<br>
+<strong>Speicherdauer:</strong> bis du den Spielstand in der App löschst oder mich um Löschung bittest.</p>
 
 <h3>3.2 Altersabfrage</h3>
-<p>Nach deinem ersten Gewinn fragt Clawit! nach deinem Geburtsjahr. Es wird nur auf deinem Gerät gespeichert, ist nicht Teil des Cloud-Spielstands und wird an niemanden gesendet. Die App leitet daraus nur ab, ob du unter 13, unter 16 oder älter bist.</p>
-<p>Weil nur das Jahr bekannt ist, nicht der Tag, rechnet Clawit! immer so, als hättest du dieses Jahr noch nicht Geburtstag gehabt. Wer in diesem Jahr 16 wird, gilt also bis zum Jahreswechsel als 15. Entsprechendes gilt für die Grenze 13.</p>
+<p>Nach deinem ersten Gewinn fragt Clawit! nach deinem Geburtsjahr. Das Jahr wird nur auf deinem Gerät gespeichert. Es ist nicht Teil des Cloud-Spielstands und wird an niemanden gesendet. Die App leitet daraus nur ab, ob du unter 13, unter 16 oder älter bist:</p>
 <ul>
-  <li><strong>Unter 13:</strong> keine Fragen zu Statistik oder Werbung, keine Spielstatistik, keine Tracking-Abfrage. Werbeanfragen werden bei Google als „Kind“ gekennzeichnet (nach dem US-Kinderschutzgesetz COPPA). Google schaltet dann keine personalisierte Werbung, überträgt keine Werbe-ID und bezieht keine weiteren Werbeanbieter ein. Die Werbung ist auf Inhalte beschränkt, die für alle Altersstufen geeignet sind.</li>
-  <li><strong>13 bis 15:</strong> keine Fragen zu Statistik oder Werbung, keine Spielstatistik, keine Tracking-Abfrage. Werbeanfragen werden als „Jugendlicher“ gekennzeichnet. Google schaltet dann keine personalisierte Werbung und wendet seine Schutzregeln für Jugendliche an.</li>
+  <li><strong>Unter 13:</strong> keine Fragen zu Statistik oder Werbung, keine Spielstatistik, keine Tracking-Abfrage. Werbeanfragen werden als „kindgerichtet“ gekennzeichnet (nach dem US-Kinderschutzgesetz COPPA) und auf Werbung beschränkt, die für alle Altersstufen geeignet ist; personalisierte Werbung gibt es nicht.</li>
+  <li><strong>13 bis 15:</strong> keine Fragen zu Statistik oder Werbung, keine Spielstatistik, nur allgemeine Werbung.</li>
   <li><strong>Ab 16:</strong> Clawit! fragt, ob Spielstatistiken gesendet werden dürfen (3.3), und zeigt beim ersten Werbeangebot die Einwilligungsabfrage von Google (3.4).</li>
 </ul>
-<p>Die Grenze von 16 Jahren gilt in allen Ländern gleich. In Deutschland ist sie das gesetzliche Mindestalter für eine Einwilligung (Art. 8 DSGVO). Andere Länder haben teils niedrigere Grenzen; Clawit! wendet trotzdem überall die strengere an.</p>
-<p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO. Mein berechtigtes Interesse ist es, Minderjährige datensparsam zu schützen und Einwilligungen nur von Personen einzuholen, die sie selbst geben dürfen. Das Geburtsjahr wird nur auf deinem Gerät gespeichert, weil die App ohne diese Angabe keine altersgerechten Einstellungen vornehmen kann (§ 25 Abs. 2 Nr. 2 TDDDG).<br>
-<strong>Speicherdauer:</strong> auf deinem Gerät, bis du die App deinstallierst. „Spielstand löschen“ behält das Geburtsjahr absichtlich, damit die Altersfrage nicht einfach neu beantwortet werden kann.</p>
+<p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. c DSGVO in Verbindung mit Art. 8 DSGVO (Einwilligungen nur von Personen ab 16) sowie Art. 6 Abs. 1 lit. f DSGVO (Schutz Minderjähriger).</p>
 
 <h3>3.3 Spielstatistik (nur ab 16 und mit deiner Einwilligung)</h3>
-<p>Wenn du 16 oder älter bist, fragt Clawit! direkt nach dem Geburtsjahr, ob pseudonyme Spielstatistiken gesendet werden dürfen. Nur bei „Ja“ wird der Dienst GameAnalytics gestartet. Vorher wird er nicht initialisiert und baut keine Verbindung auf. Bis zu deiner Antwort merkt sich die App die Ereignisse dieser ersten Sitzung nur im Arbeitsspeicher. Bei „Ja“ werden sie nachgereicht, bei „Nein“ verworfen.</p>
-<p>Übermittelt werden dann:</p>
-<ul>
-  <li>Spielereignisse, z. B. Spieltag begonnen, Versuch gestartet, Preis gewonnen, Sammlung geöffnet, Fortschritt im ersten Spiel,</li>
-  <li>die Sitzungsdauer,</li>
-  <li>technische Gerätedaten: Gerätemodell, Betriebssystem, App-Version, Sprache,</li>
-  <li>eine von GameAnalytics vergebene, pseudonyme Nutzer-ID (nicht deine Spieler-ID aus 3.1),</li>
-  <li>Diagnose- und Absturzinformationen.</li>
-</ul>
-<p>Technisch bedingt erhält GameAnalytics deine IP-Adresse. Daraus wird dein ungefährer Standort (Land) abgeleitet; die IP-Adresse wird danach nur gekürzt aufbewahrt. Aus den Statistiken ergibt sich, an welchen Stellen das Spiel zu schwer oder zu leicht ist.</p>
-<p><strong>Anbieter:</strong> GameAnalytics ApS, Pilestræde 58, 1112 Kopenhagen, Dänemark, als Auftragsverarbeiter (<a href="https://www.gameanalytics.com/trust/privacy-notice">Datenschutz von GameAnalytics</a>). Zur Unternehmensgruppe gehört die GameAnalytics Limited im Vereinigten Königreich. Für das Vereinigte Königreich gibt es einen Angemessenheitsbeschluss der EU-Kommission. <span class="todo">[Unterauftragsverarbeiter und Hosting-Region laut GameAnalytics-AVV ergänzen]</span><br>
+<p>Wenn du 16 oder älter bist, fragt Clawit! direkt nach dem Geburtsjahr, ob anonyme Spielstatistiken gesendet werden dürfen. Nur bei „Ja“ wird der Dienst GameAnalytics aktiviert. Vorher wird nichts gesendet. Ereignisse aus der Zeit vor deiner Antwort werden nur bei „Ja“ nachgereicht und bei „Nein“ verworfen.</p>
+<p>Übermittelt werden dann Spielereignisse (z. B. Spieltag begonnen, Versuch gestartet, Preis gewonnen, Sammlung geöffnet, Fortschritt im ersten Spiel), Sitzungsdauer, technische Gerätedaten (Gerätemodell, Betriebssystem, App-Version, Sprache), eine vom Dienst vergebene Nutzer-ID sowie Diagnose- und Absturzinformationen. Daraus ergibt sich, an welchen Stellen das Spiel zu schwer oder zu leicht ist.</p>
+<p><strong>Anbieter:</strong> GameAnalytics ApS, Dänemark (<a href="https://gameanalytics.com/privacy">Datenschutz von GameAnalytics</a>).<br>
 <strong>Rechtsgrundlage:</strong> deine Einwilligung, Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG.<br>
-<strong>Speicherdauer:</strong> Ereignisdaten höchstens 12 Monate, daraus zusammengefasste Statistiken höchstens 1 Jahr, gekürzte IP-Adressen höchstens 30 Tage.<br>
-<strong>Widerruf:</strong> jederzeit in den Einstellungen unter „Datenschutz ▸ Spielstatistik teilen“. Ab dann sendet die App nichts mehr. Bis dahin übermittelte Daten bleiben rechtmäßig verarbeitet und werden nach den genannten Fristen gelöscht. Eine vorzeitige Löschung kann ich nur veranlassen, wenn sich deine Daten zuordnen lassen (siehe Abschnitt 6).</p>
+<strong>Widerruf:</strong> jederzeit in den Optionen unter „Datenschutz ▸ Spielstatistik teilen“. Ab dann wird nichts mehr gesendet.</p>
 
 <h3>3.4 Werbung</h3>
-<p>Clawit! zeigt Werbung nur als freiwilliges Video: Wenn deine Versuche für heute aufgebraucht sind, kannst du eins ansehen und bekommst dafür Extra-Versuche. Es gibt keine Banner und keine Werbung, die du nicht selbst startest. Ein Video anzusehen ist keine Einwilligung in personalisierte Werbung; die wird gesondert abgefragt. Der Werbedienst startet erst, wenn dein Alter bekannt ist und du, ab 16, die Einwilligungsabfrage beantwortet hast.</p>
-<p>Ab 16 zeigt Clawit! beim ersten Werbeangebot die Einwilligungsabfrage von Google (Google User Messaging Platform, nach dem IAB-Standard „Transparency &amp; Consent Framework“). Dort entscheidest du, ob Google und die dort genannten Partner Informationen auf deinem Gerät speichern oder abrufen und ob die Werbung auf dich zugeschnitten werden darf. Ablehnen ist genauso einfach wie Zustimmen. Deine Antwort speichert Google auf deinem Gerät.</p>
-<p>Beim Laden und Abspielen eines Videos verarbeitet Google in jedem Fall technische Gerätedaten (Gerätemodell, Betriebssystem, Sprache, App-Version), deine IP-Adresse und ob und wie lange das Video lief. Außerdem speichert das Werbe-SDK Programmcode und Werbevideos zwischen, damit sie abgespielt werden können.</p>
+<p>Clawit! zeigt Werbung nur als freiwilliges Video: Wenn deine Versuche für heute aufgebraucht sind, kannst du eins ansehen und bekommst dafür Extra-Versuche. Es gibt keine Banner und keine Werbung, die du nicht selbst startest. Der Werbedienst startet erst, wenn dein Alter bekannt ist und du, ab 16, die Einwilligungsabfrage beantwortet hast.</p>
+<p>Ab 16 zeigt Clawit! beim ersten Werbeangebot die Einwilligungsabfrage von Google (Google User Messaging Platform, nach dem IAB-Standard „Transparency &amp; Consent Framework“). Dort entscheidest du, ob Informationen auf deinem Gerät gespeichert oder abgerufen und ob die Werbung auf dich zugeschnitten werden darf. Deine Antwort speichert Google auf deinem Gerät.</p>
+<p>Beim Laden und Abspielen eines Videos verarbeitet Google technische Gerätedaten (Gerätemodell, Betriebssystem, Sprache, App-Version), deine IP-Adresse und ob und wie lange das Video lief.</p>
 <ul>
-  <li><strong>Mit Einwilligung (personalisierte Werbung, nur ab 16):</strong> Google und die Partner aus der Einwilligungsabfrage dürfen zusätzlich die Werbe-ID deines Geräts und gespeicherte Informationen nutzen, um Werbung nach deinen Interessen auszuwählen und ihre Wirkung zu messen. Unter iOS wird die Werbe-ID nur gelesen, wenn du außerdem in der Tracking-Abfrage von iOS zustimmst. Diese Abfrage erscheint erst nach einer solchen Einwilligung. Umgekehrt ersetzt ein „Erlauben“ in der iOS-Abfrage die Einwilligung bei Google nicht.</li>
-  <li><strong>Ohne Einwilligung und unter 16 („eingeschränkte Werbung“):</strong> Google schaltet keine personalisierte Werbung und nutzt keine personenbezogenen Daten, um Werbung auf dich zuzuschneiden. Die Daten werden nur verarbeitet, um die Werbung auszuliefern, zu zählen und Betrug zu verhindern. Die Werbe-Option „Programmatic limited ads“, die dafür zusätzlich lokalen Speicher nutzen würde, ist in Clawit! ausgeschaltet. <span class="todo">[nach Netzwerk-Mitschnitt bestätigen: Zugriffe auf dem Gerät und Werbe-ID je Altersgruppe]</span></li>
+  <li><strong>Mit Einwilligung (personalisierte Werbung, nur ab 16):</strong> Google darf zusätzlich die Werbe-ID deines Geräts und gespeicherte Informationen nutzen, um Werbung nach deinen Interessen auszuwählen und ihre Wirkung zu messen. Unter iOS wird die Werbe-ID nur gelesen, wenn du außerdem in der Tracking-Abfrage von iOS zustimmst; diese Abfrage erscheint nur nach einer solchen Einwilligung.</li>
+  <li><strong>Ohne Einwilligung und unter 16 („eingeschränkte Werbung“):</strong> Google zeigt Werbung, ohne Informationen auf deinem Gerät zu speichern oder abzurufen und ohne sie auf dich zuzuschneiden. Die Daten werden nur verarbeitet, um die Werbung auszuliefern und Betrug zu verhindern.</li>
 </ul>
-<p><strong>Anbieter:</strong> Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland (Google AdMob) (<a href="https://policies.google.com/privacy">Datenschutz von Google</a>, <a href="https://policies.google.com/technologies/partner-sites">wie Google Daten aus Apps nutzt</a>). Bei personalisierter Werbung kommen die Partner hinzu, die die Einwilligungsabfrage nennt. Daten können an Google LLC in den USA übermittelt werden (siehe Abschnitt 5).<br>
-<strong>Rechtsgrundlage:</strong> für personalisierte Werbung und das Speichern oder Abrufen von Informationen auf deinem Gerät deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG). Für eingeschränkte Werbung Art. 6 Abs. 1 lit. f DSGVO. Mein berechtigtes Interesse: Das Spiel ist kostenlos und finanziert sich über Videos, die du freiwillig startest. Dafür müssen die Videos ausgeliefert, gezählt und gegen Betrug abgesichert werden. Gespeichert werden dabei nur Inhalte, die zum Abspielen des von dir gestarteten Videos nötig sind (§ 25 Abs. 2 Nr. 2 TDDDG). Du kannst dieser Verarbeitung widersprechen (Abschnitt 6). Am einfachsten verzichtest du dafür auf die Videos.<br>
-<strong>Speicherdauer:</strong> legt Google fest, siehe <a href="https://policies.google.com/technologies/retention">wie lange Google Daten aufbewahrt</a>.<br>
-<strong>Widerruf:</strong> jederzeit in den Einstellungen unter „Datenschutz ▸ Werbe-Datenschutz“ und in den iOS-Einstellungen unter „Datenschutz &amp; Sicherheit ▸ Tracking“. Unter Android kannst du die Werbe-ID in den Systemeinstellungen zurücksetzen oder löschen.</p>
+<p><strong>Anbieter:</strong> Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland (Google AdMob) (<a href="https://policies.google.com/privacy">Datenschutz von Google</a>, <a href="https://policies.google.com/technologies/partner-sites">wie Google Daten aus Apps nutzt</a>). Daten können an Google LLC in den USA übermittelt werden; Google ist nach dem EU-US Data Privacy Framework zertifiziert.<br>
+<strong>Rechtsgrundlage:</strong> für personalisierte Werbung und den Zugriff auf dein Gerät deine Einwilligung, Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG. Für eingeschränkte Werbung Art. 6 Abs. 1 lit. f DSGVO: Das Spiel ist kostenlos und finanziert sich über Videos, die du freiwillig ansiehst.<br>
+<strong>Widerruf:</strong> jederzeit in den Optionen unter „Datenschutz ▸ Werbe-Datenschutz“ und in den iOS-Einstellungen unter „Datenschutz &amp; Sicherheit ▸ Tracking“. Unter Android kannst du die Werbe-ID in den Systemeinstellungen zurücksetzen oder löschen.</p>
 
 <h3>3.5 Absturzberichte</h3>
-<p>Wenn Clawit! abstürzt oder ein Fehler auftritt, wird ein Bericht gesendet, damit ich den Fehler finden und beheben kann. Er enthält:</p>
-<ul>
-  <li>die Fehlermeldung und die Stelle im Programmcode,</li>
-  <li>die letzten Schritte in der App vor dem Fehler (interne Protokollzeilen),</li>
-  <li>Gerätemodell, Betriebssystem und App-Version.</li>
-</ul>
-<p>Die App entfernt vor dem Senden die Spieler-ID, den Gerätenamen und jede Protokollzeile, die eine Kennung enthält (Spieler-, Installations- oder Werbe-ID). Der Sentry-Baustein legt auf deinem Gerät eine eigene zufällige Installations-ID an (nicht die aus Abschnitt 3.1); die App sendet sie nicht mit. Nur bei einem Absturz tief im System (nicht im Spielcode) kann der Baustein sie dem Bericht selbst beifügen. Sentry entfernt sie dann vor dem Speichern, deshalb kann ich nicht sehen, wie viele Geräte ein Fehler trifft. Bildschirmfotos und Bildschirmaufzeichnungen werden nicht gesendet. Deine IP-Adresse wird beim Senden zwangsläufig übertragen. Sentry leitet daraus das Land ab und speichert die IP-Adresse selbst nicht.</p>
-<p><strong>Anbieter:</strong> Functional Software, Inc. (Sentry), USA, als Auftragsverarbeiter. Die Daten werden in der EU (Frankfurt) gespeichert (<a href="https://sentry.io/privacy/">Datenschutz von Sentry</a>). Zugriffe aus den USA sind nicht ausgeschlossen (siehe Abschnitt 5).<br>
-<strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO. Mein berechtigtes Interesse ist eine stabile und sichere App. Du kannst widersprechen (Abschnitt 6). Ein Absturzbericht wird auf deinem Gerät zwischengespeichert und beim nächsten Start gesendet, weil die App im Moment des Absturzes beendet wird; ohne diesen Speicher ginge jeder Bericht verloren (§ 25 Abs. 2 Nr. 2 TDDDG). Es gibt keine Nutzungs- oder Sitzungsstatistik über Sentry.<br>
-<strong>Speicherdauer:</strong> höchstens 30 Tage.</p>
+<p>Wenn Clawit! abstürzt oder ein Fehler auftritt, wird ein Bericht gesendet, damit ich den Fehler finden und beheben kann. Er enthält die Fehlermeldung, die Stelle im Programmcode, die letzten Schritte in der App vor dem Fehler, Gerätemodell, Betriebssystem, App-Version und eine zufällige Installations-ID. Er enthält keine Nutzer-ID, keinen Gerätenamen und keine Werbe-ID. Die IP-Adresse wird nicht gespeichert.</p>
+<p><strong>Anbieter:</strong> Functional Software, Inc. (Sentry), USA, als Auftragsverarbeiter. Die Daten werden in der EU (Frankfurt) gespeichert (<a href="https://sentry.io/privacy/">Datenschutz von Sentry</a>).<br>
+<strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer fehlerfreien App) und § 25 Abs. 2 Nr. 2 TDDDG.<br>
+<strong>Speicherdauer:</strong> höchstens 90 Tage.</p>
 
 <h3>3.6 Neue Inhalte</h3>
-<p>Neue Preise und Sets lädt Clawit! ohne App-Update von einem Content-Server. Dabei werden technisch bedingt deine IP-Adresse, der Zeitpunkt und die abgerufene Datei verarbeitet. Es wird keine Spieler-ID übertragen. Der Content-Server hat Standorte weltweit; du wirst vom nächstgelegenen bedient, in Europa also von einem europäischen Standort.</p>
-<p><strong>Anbieter:</strong> BunnyWay d.o.o. (bunny.net), Slowenien, als Auftragsverarbeiter (<a href="https://bunny.net/privacy/">Datenschutz von bunny.net</a>). Die Dateien selbst liegen in Frankfurt.<br>
-<strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO für die Auslieferung der Inhalte, die die App für dein Spiel anfordert. Für die Zugriffsprotokolle Art. 6 Abs. 1 lit. f DSGVO. Mein berechtigtes Interesse ist der sichere Betrieb des Content-Servers.<br>
-<strong>Speicherdauer:</strong> Zugriffsprotokolle 3 Tage. Die IP-Adresse wird darin gekürzt. <span class="todo">[Pull-Zone-Logging-Einstellung bestätigen]</span></p>
+<p>Neue Preise und Sets lädt Clawit! ohne App-Update von einem Content-Server. Dabei werden technisch bedingt deine IP-Adresse und der Zeitpunkt der Anfrage verarbeitet. Es wird keine Nutzer-ID übertragen.<br>
+<strong>Anbieter:</strong> BunnyWay d.o.o. (bunny.net), Slowenien, als Auftragsverarbeiter (<a href="https://bunny.net/privacy/">Datenschutz von bunny.net</a>).<br>
+<strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO.</p>
 
 <h3>3.7 Was nur auf deinem Gerät bleibt</h3>
 <ul>
   <li><strong>Erinnerungen:</strong> Die tägliche Erinnerung ist eine lokale Benachrichtigung deines Geräts. Es gibt keinen Push-Server.</li>
   <li><strong>Teilen:</strong> Wenn du einen Gewinn teilst, öffnet sich das Teilen-Menü deines Betriebssystems. Was du dort teilst und mit wem, entscheidest du. Clawit! erfährt davon nichts.</li>
-  <li>Geburtsjahr (siehe 3.2) und Einstellungen wie Ton, Vibration, Sprache und Kamera bleiben auf dem Gerät. Ob dein Betriebssystem App-Daten in deiner eigenen Geräte-Sicherung (iCloud bzw. Google) mitsichert, entscheidest du in den Systemeinstellungen.</li>
+  <li><strong>Geburtsjahr</strong> (siehe 3.2) und <strong>Einstellungen</strong> wie Ton, Vibration, Sprache und Kamera bleiben auf dem Gerät.</li>
 </ul>
 
 <h3>3.8 Diese Webseite</h3>
-<p>Diese Seite wird über GitHub Pages bereitgestellt. Beim Aufruf verarbeitet GitHub deine IP-Adresse und Verbindungsdaten (aufgerufene Seite, Zeitpunkt, Browser), damit die Seite ausgeliefert und gegen Angriffe abgesichert werden kann. GitHub speichert die IP-Adresse dabei zu Sicherheitszwecken.</p>
-<p><strong>Anbieter:</strong> GitHub, Inc., USA (<a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">Datenschutz von GitHub</a>). Die Daten werden in den USA verarbeitet (siehe Abschnitt 5).<br>
-<strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO. Mein berechtigtes Interesse ist es, diese Hinweise öffentlich und sicher bereitzustellen.<br>
-<strong>Speicherdauer:</strong> legt GitHub nach Sicherheitsbedarf fest; eine feste Frist nennt GitHub nicht.<br>
-Die Seite selbst setzt keine Cookies, enthält keine Skripte von Dritten und lädt keine externen Inhalte; auch die Schriften liegen auf demselben Server.</p>
+<p>Diese Seite wird über GitHub Pages (GitHub Inc., USA) bereitgestellt. GitHub verarbeitet dabei technisch bedingt deine IP-Adresse (<a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">Datenschutz von GitHub</a>). Die Seite selbst setzt keine Cookies und lädt keine externen Inhalte.</p>
 
-<h2>4. Speicherdauer im Überblick</h2>
-<div class="scroll"><table>
-  <tr><th>Daten</th><th>Wo</th><th>Wie lange</th></tr>
-  <tr><td>Spielstand, Spieler-ID, Installations-ID</td><td>Supabase (EU)</td><td>bis zur Löschung durch dich oder auf Anfrage</td></tr>
-  <tr><td>Server-Protokolle, Sicherungskopien</td><td>Supabase (EU)</td><td>höchstens 7 Tage</td></tr>
-  <tr><td>Geburtsjahr, Einstellungen, Datenschutz-Antworten</td><td>nur dein Gerät</td><td>bis zur Deinstallation</td></tr>
-  <tr><td>Spielstatistik (Ereignisse)</td><td>GameAnalytics</td><td>höchstens 12 Monate; gekürzte IP höchstens 30 Tage</td></tr>
-  <tr><td>Werbung</td><td>Google</td><td>nach den Fristen von Google</td></tr>
-  <tr><td>Absturzberichte</td><td>Sentry (EU)</td><td>höchstens 30 Tage</td></tr>
-  <tr><td>Zugriffsprotokolle Content-Server</td><td>bunny.net</td><td>3 Tage</td></tr>
-  <tr><td>Zugriffsdaten dieser Webseite</td><td>GitHub</td><td>nach Sicherheitsbedarf von GitHub</td></tr>
-</table></div>
+<h2>4. Deine Rechte</h2>
+<p>Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21). Eine Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen (Art. 7 Abs. 3).</p>
+<p>Am schnellsten löschst du alles selbst: <strong>Optionen ▸ Spielstand löschen</strong> entfernt dein anonymes Konto und deinen Spielstand auf dem Server. Wenn das Gerät dabei offline ist, wird die Löschung beim nächsten Online-Kontakt nachgeholt. Daten bei GameAnalytics, Sentry und Google sind keinem Namen zugeordnet. Für eine Löschung dort schreib mir bitte eine E-Mail. Zu Werbedaten kannst du dich auch direkt an Google wenden.</p>
+<p>Du kannst dich außerdem bei einer Datenschutz-Aufsichtsbehörde beschweren, z. B. der Behörde deines Wohnorts.</p>
 
-<h2>5. Übermittlung in Länder außerhalb der EU</h2>
-<p>Sentry, Google und GitHub sind US-Unternehmen oder gehören zu solchen, Supabase sitzt in Singapur und den USA. Auch wenn Daten in der EU gespeichert werden, können sie aus den USA zugänglich sein, etwa für Support oder Wartung. bunny.net bedient Anfragen außerhalb Europas von Standorten in anderen Ländern. Solche Übermittlungen stützen sich je nach Empfänger auf:</p>
-<ul>
-  <li>den Angemessenheitsbeschluss der EU-Kommission zum EU-US Data Privacy Framework, soweit der Empfänger danach zertifiziert ist (Google LLC, GitHub, Inc., Functional Software, Inc. für Sentry),</li>
-  <li>den Angemessenheitsbeschluss für das Vereinigte Königreich (GameAnalytics Limited),</li>
-  <li>sonst die EU-Standardvertragsklauseln, die in den Auftragsverarbeitungsverträgen der Anbieter enthalten sind (Supabase; bei den übrigen als Rückfallebene).</li>
-</ul>
-<p>Eine Kopie der jeweiligen Garantien kannst du per E-Mail bei mir anfordern; die Angemessenheitsbeschlüsse findest du bei der <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_de">EU-Kommission</a>.</p>
-
-<h2>6. Deine Rechte und Löschung</h2>
-<p>Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18) und Datenübertragbarkeit (Art. 20). Einer Verarbeitung auf Grundlage meines berechtigten Interesses (Art. 6 Abs. 1 lit. f DSGVO) kannst du aus Gründen, die sich aus deiner besonderen Situation ergeben, widersprechen (Art. 21). Eine Einwilligung kannst du jederzeit widerrufen (Art. 7 Abs. 3). Der Widerruf gilt für die Zukunft; was bis dahin geschehen ist, bleibt rechtmäßig.</p>
-<p><strong>Selbst löschen:</strong> „Einstellungen ▸ Spielstand löschen“ löscht auf dem Server dein Spielkonto (Spieler-ID und Anmeldedaten) und deinen gespeicherten Spielstand, auf deinem Gerät den Spielstand. Geburtsjahr, Einstellungen und deine Datenschutz-Antworten bleiben auf dem Gerät, bis du die App deinstallierst; das Geburtsjahr absichtlich, damit die Altersfrage nicht einfach neu beantwortet werden kann. Ist das Gerät dabei offline, holt die App die Löschung beim nächsten Online-Kontakt nach und synchronisiert bis dahin nichts. Nicht sofort gelöscht werden:</p>
-<ul>
-  <li>Server-Protokolle und Datenbank-Sicherungskopien bei Supabase. Sie laufen nach höchstens 7 Tagen von selbst ab.</li>
-  <li>Daten bei GameAnalytics, Sentry, Google und bunny.net. Sie laufen nach den Fristen aus Abschnitt 4 ab.</li>
-</ul>
-<p><strong>Anfragen per E-Mail:</strong> Schreib an <a href="mailto:clawit.app@gmail.com">clawit.app@gmail.com</a>. Damit ich deine Daten finden kann, gib bitte deine Spieler-ID an. Sie steht in der letzten Zeile der Einstellungen; Antippen kopiert sie. Ich antworte innerhalb eines Monats.</p>
-<p>Daten bei GameAnalytics, Sentry, Google und bunny.net tragen keine Spieler-ID, und ich kann sie keiner Person zuordnen. Ich kann sie deshalb nur löschen lassen oder beauskunften, wenn du mir zusätzliche Angaben gibst, mit denen sie sich zuordnen lassen (Art. 11 DSGVO). Zu Werbedaten kannst du dich auch direkt an Google wenden.</p>
-<p><strong>Beschwerde:</strong> Du kannst dich bei jeder Datenschutz-Aufsichtsbehörde beschweren. Für mich zuständig ist der Hamburgische Beauftragte für Datenschutz und Informationsfreiheit, Ludwig-Erhard-Straße 22, 20459 Hamburg (<a href="https://datenschutz-hamburg.de">datenschutz-hamburg.de</a>).</p>
-<p><strong>Pflicht zur Angabe:</strong> Du musst keine Daten angeben. Ohne Geburtsjahr startet die App keine Werbung. Ohne Internetverbindung spielst du weiter; der Cloud-Spielstand wird nachgeholt, sobald du wieder online bist.</p>
-
-<h2>7. Änderungen</h2>
+<h2>5. Änderungen</h2>
 <p>Wenn sich an der App etwas ändert, das den Datenschutz betrifft, wird diese Erklärung vorher aktualisiert.</p>
 
-<hr>
+<!-- ======================================================================== -->
 
-<h1 id="en">Clawit! – Privacy policy (English)</h1>
-<p class="muted">Last updated: <span class="todo">[publication date]</span> · <a href="../imprint/#en">Imprint</a></p>
+<h2 id="en">Clawit! – Privacy policy (English)</h2>
+<p class="muted">Last updated: 8 November 2026 · <a href="../imprint/#en">Imprint</a></p>
 
-<h2>1. Who is responsible</h2>
+<h3>1. Who is responsible</h3>
 <p>
   Leon Bantin<br>
   Georg-Raloff-Ring 28, 22309 Hamburg, Germany<br>
   Email: <a href="mailto:clawit.app@gmail.com">clawit.app@gmail.com</a>
 </p>
-<p>I develop Clawit! and offer it in the app stores, which makes me the controller for the processing of personal data in connection with Clawit!. I have not appointed a data protection officer, as none is required. Write to the address above with any privacy question or to exercise your rights.</p>
+<p>Clawit! is developed and published by a private individual. Write to the address above with any privacy question or request.</p>
 
-<h2>2. In short</h2>
+<h3>2. In short</h3>
 <ul>
-  <li>You can play Clawit! without a name or email address. For your save, the app creates a randomly generated player ID. It does not reveal who you are, but it is still personal (pseudonymous) data, not anonymous data.</li>
-  <li>Clawit! asks for your year of birth once. It stays on your device. When in doubt, the app treats you as younger, never older.</li>
+  <li>No account, email or name needed. Clawit! creates an anonymous account in the background so your save is backed up.</li>
+  <li>Clawit! asks for your year of birth once. It stays on your device and only decides which questions the game asks you.</li>
   <li>Play statistics are only sent if you are 16 or older and explicitly agree.</li>
-  <li>You only see ads when you start a video yourself for extra tries. Ads tailored to you only from 16 and only with your consent. Even for non-tailored ads Google processes technical data such as your IP address (see 3.4).</li>
-  <li>Crash reports contain no player ID and no advertising ID. Your IP address is transmitted with them but not stored.</li>
-  <li>You can change your answers any time in Settings ▸ Privacy. Data is never sold.</li>
-  <li>“Delete Save” in Settings deletes your game account and your save on the server too. Section 6 sets out exactly what that covers and what it does not.</li>
+  <li>You only see ads when you start a video yourself for extra tries. Ads tailored to you only from 16 and only with your consent; otherwise Google serves limited ads without accessing your device.</li>
+  <li>Crash reports are stored without a user ID and without your IP address.</li>
+  <li>You can change your answers any time in Options ▸ Privacy. Data is never sold.</li>
+  <li>“Delete save” in Options deletes your anonymous account and your save on the server too.</li>
 </ul>
 
-<h2>3. What data is processed</h2>
+<h3>3. Cloud save (always)</h3>
+<p>A random anonymous user ID and sign-in token, your game progress (prizes won, progress, collection layout, days played, best scores), a random install ID for counting daily tries across devices, and — for technical reasons — your IP address and request time in server logs. The server time is also used so the game day cannot be skipped by changing the device clock.<br>
+Provider: Supabase Inc., USA, as processor; the database is hosted in the EU (Ireland, AWS eu-west-1), with EU Standard Contractual Clauses for any access from the US. Legal basis: Art. 6(1)(b) GDPR and § 25(2) no. 2 TDDDG. Kept until you delete your save in the app or ask me to.</p>
 
-<h3>3.1 Cloud save (always)</h3>
-<p>Clawit! stores your game progress on a server. This keeps your collection on a second device, and the game day follows server time instead of the device clock. The following is processed:</p>
+<h3>4. Age question</h3>
+<p>After your first win Clawit! asks for your year of birth. It is stored on your device only — not in the cloud save, never sent anywhere. The app only derives whether you are under 13, under 16 or older. <strong>Under 13:</strong> no statistics or ads questions, no play statistics, no tracking prompt; ad requests are marked as child-directed (US COPPA) and limited to ads suitable for all ages; no personalised ads. <strong>13 to 15:</strong> no statistics or ads questions, no play statistics, general ads only. <strong>16 and older:</strong> Clawit! asks about play statistics (5) and shows Google’s consent form at the first ad offer (6).<br>
+Legal basis: Art. 6(1)(c) with Art. 8 GDPR (consent only from 16) and Art. 6(1)(f) GDPR (protecting minors).</p>
+
+<h3>5. Play statistics (16+ and only with your consent)</h3>
+<p>If you are 16 or older, Clawit! asks right after the year of birth whether it may send anonymous play statistics. Only on “Yes” is GameAnalytics switched on; nothing is sent before, and events from before your answer are sent only on “Yes” and discarded on “No”. Sent: gameplay events (e.g. day started, try started, prize won, collection opened, first-session progress), session length, technical device data (model, OS, app version, language), a user ID assigned by the service, and diagnostic and crash information.<br>
+Provider: GameAnalytics ApS, Denmark (<a href="https://gameanalytics.com/privacy">their privacy policy</a>). Legal basis: your consent, Art. 6(1)(a) GDPR and § 25(1) TDDDG. Withdraw any time in Options ▸ Privacy ▸ Share play statistics.</p>
+
+<h3>6. Ads</h3>
+<p>Clawit! only shows ads as an optional video: when today’s tries are used up you may watch one for extra tries. No banners, no ad you did not start yourself. The ad service only starts once your age is known and, from 16, you have answered the consent form. From 16, at the first ad offer, Clawit! shows Google’s consent form (Google User Messaging Platform, following the IAB Transparency &amp; Consent Framework), where you decide whether information may be stored on or read from your device and whether ads may be tailored to you; Google stores your answer on your device. Loading and playing a video, Google processes technical device data (model, OS, language, app version), your IP address and whether and how long the video played.</p>
 <ul>
-  <li>a randomly generated player ID and a sign-in token, stored on the device in the iOS Keychain or in Android app storage,</li>
-  <li>your game progress: prizes won, progress, collection layout, days played, best scores, try counts,</li>
-  <li>a random install ID, so daily tries are counted correctly across several devices,</li>
-  <li>for technical reasons, your IP address and the time of every request (server logs).</li>
+  <li><strong>With consent (personalised ads, 16+ only):</strong> Google may also use your device’s advertising ID and stored information to pick ads by interest and measure them. On iOS the advertising ID is only read if you also allow iOS’s tracking prompt, which only appears after such consent.</li>
+  <li><strong>Without consent and under 16 (“limited ads”):</strong> Google serves ads without storing or reading information on your device and without tailoring them to you; data is processed only to deliver the ad and prevent fraud.</li>
 </ul>
-<p>After a reinstall, iOS finds your save again through the Keychain. On Android this only works if Android backup is switched on in your Google account.</p>
-<p><strong>Provider:</strong> Supabase (Supabase Pte. Ltd., Singapore, as contracting party, and Supabase Inc., USA) as processor (<a href="https://supabase.com/privacy">Supabase’s privacy policy</a>). The database is hosted in the EU (Ireland, Amazon Web Services, region eu-west-1). Access from outside the EU, for example by support staff or sub-processors, cannot be ruled out. EU Standard Contractual Clauses apply to it (see section 5).<br>
-<strong>Legal basis:</strong> Art. 6(1)(b) GDPR. The cloud save and server time are part of the game you use: without them, daily tries and game days cannot be counted fairly. The player ID, sign-in token and install ID are stored on your device because this is strictly necessary for the service (§ 25(2) no. 2 TDDDG).<br>
-<strong>Retention:</strong> save, player ID and install ID until you delete your save or ask me to. Server logs at most 7 days. Database backups at most 7 days.</p>
+<p>Provider: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland (Google AdMob) (<a href="https://policies.google.com/privacy">Google’s privacy policy</a>, <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from apps</a>). Data may be transferred to Google LLC in the US, which is certified under the EU-US Data Privacy Framework. Legal basis: personalised ads and device access — your consent, Art. 6(1)(a) GDPR and § 25(1) TDDDG; limited ads — Art. 6(1)(f) GDPR, the game is free and funded by videos you choose to watch. Withdraw any time in Options ▸ Privacy ▸ Ad privacy choices and in iOS Settings ▸ Privacy &amp; Security ▸ Tracking; on Android you can reset or delete the advertising ID in the system settings.</p>
 
-<h3>3.2 Age question</h3>
-<p>After your first win Clawit! asks for your year of birth. It is stored on your device only, is not part of the cloud save and is never sent anywhere. The app only derives whether you are under 13, under 16 or older.</p>
-<p>Because only the year is known, not the day, Clawit! always assumes your birthday this year has not happened yet. Someone turning 16 this year therefore counts as 15 until the year ends. The same applies to the age of 13.</p>
-<ul>
-  <li><strong>Under 13:</strong> no statistics or ads questions, no play statistics, no tracking prompt. Ad requests are marked to Google as “child” (under the US children’s privacy law COPPA). Google then serves no personalised ads, does not transmit an advertising ID and involves no other ad vendors. Ads are limited to content suitable for all ages.</li>
-  <li><strong>13 to 15:</strong> no statistics or ads questions, no play statistics, no tracking prompt. Ad requests are marked as “teen”. Google then serves no personalised ads and applies its protections for teens.</li>
-  <li><strong>16 and older:</strong> Clawit! asks about play statistics (3.3) and shows Google’s consent form at the first ad offer (3.4).</li>
-</ul>
-<p>The limit of 16 applies the same in every country. In Germany it is the legal minimum age for giving consent (Art. 8 GDPR). Some countries set lower limits; Clawit! applies the stricter one everywhere.</p>
-<p><strong>Legal basis:</strong> Art. 6(1)(f) GDPR. My legitimate interest is protecting minors with as little data as possible and obtaining consent only from people allowed to give it themselves. The year of birth is stored on your device only, because the app cannot apply age-appropriate settings without it (§ 25(2) no. 2 TDDDG).<br>
-<strong>Retention:</strong> on your device until you uninstall the app. “Delete Save” deliberately keeps the year of birth so the age question cannot simply be answered again.</p>
+<h3>7. Crash reports</h3>
+<p>When Clawit! crashes or hits an error, a report is sent so I can find and fix it: the error message, the place in the code, the last steps in the app before it, device model, OS, app version and a random install ID. No user ID, no device name, no advertising ID; the IP address is not stored.<br>
+Provider: Functional Software, Inc. (Sentry), USA, as processor; data stored in the EU (Frankfurt) (<a href="https://sentry.io/privacy/">Sentry’s privacy policy</a>). Legal basis: Art. 6(1)(f) GDPR (legitimate interest in a working app) and § 25(2) no. 2 TDDDG. Kept for at most 90 days.</p>
 
-<h3>3.3 Play statistics (16+ and only with your consent)</h3>
-<p>If you are 16 or older, Clawit! asks right after the year of birth whether it may send pseudonymous play statistics. Only on “Yes” is GameAnalytics started. Before that it is not initialised and makes no connection. Until you answer, the app keeps the events of this first session in memory only. On “Yes” they are sent, on “No” they are discarded.</p>
-<p>The following is then transmitted:</p>
-<ul>
-  <li>gameplay events, e.g. day started, try started, prize won, collection opened, first-session progress,</li>
-  <li>session length,</li>
-  <li>technical device data: model, OS, app version, language,</li>
-  <li>a pseudonymous user ID assigned by GameAnalytics (not your player ID from 3.1),</li>
-  <li>diagnostic and crash information.</li>
-</ul>
-<p>For technical reasons GameAnalytics receives your IP address. It derives your approximate location (country) from it and then keeps the IP address only in shortened form. The statistics show where the game is too hard or too easy.</p>
-<p><strong>Provider:</strong> GameAnalytics ApS, Pilestræde 58, 1112 Copenhagen, Denmark, as processor (<a href="https://www.gameanalytics.com/trust/privacy-notice">GameAnalytics’ privacy notice</a>). The group includes GameAnalytics Limited in the United Kingdom, for which there is an EU adequacy decision. <span class="todo">[add sub-processors and hosting region from the GameAnalytics DPA]</span><br>
-<strong>Legal basis:</strong> your consent, Art. 6(1)(a) GDPR and § 25(1) TDDDG.<br>
-<strong>Retention:</strong> event data at most 12 months, aggregated statistics at most 1 year, shortened IP addresses at most 30 days.<br>
-<strong>Withdrawal:</strong> any time in Settings ▸ Privacy ▸ Share play statistics. From then on the app sends nothing more. Data sent before stays lawfully processed and is deleted after the periods above. I can only arrange earlier deletion if your data can be identified (see section 6).</p>
+<h3>8. New content</h3>
+<p>Clawit! downloads new prizes and sets from a content server without an app update; for technical reasons your IP address and the request time are processed, no user ID is sent.<br>
+Provider: BunnyWay d.o.o. (bunny.net), Slovenia, as processor (<a href="https://bunny.net/privacy/">their privacy policy</a>). Legal basis: Art. 6(1)(b) GDPR.</p>
 
-<h3>3.4 Ads</h3>
-<p>Clawit! only shows ads as an optional video: when today’s tries are used up you may watch one for extra tries. No banners, no ad you did not start yourself. Watching a video is not consent to personalised ads; that is asked separately. The ad service only starts once your age is known and, from 16, you have answered the consent form.</p>
-<p>From 16, at the first ad offer, Clawit! shows Google’s consent form (Google User Messaging Platform, following the IAB Transparency &amp; Consent Framework). There you decide whether Google and the partners it lists may store or read information on your device and whether ads may be tailored to you. Declining is as easy as agreeing. Google stores your answer on your device.</p>
-<p>When a video loads and plays, Google always processes technical device data (model, OS, language, app version), your IP address and whether and how long the video played. The ad SDK also caches program code and ad videos so they can be played.</p>
-<ul>
-  <li><strong>With consent (personalised ads, 16+ only):</strong> Google and the partners listed in the consent form may also use your device’s advertising ID and stored information to pick ads by interest and measure them. On iOS the advertising ID is only read if you also allow iOS’s tracking prompt, which only appears after such consent. Conversely, “Allow” in the iOS prompt does not replace consent in Google’s form.</li>
-  <li><strong>Without consent and under 16 (“limited ads”):</strong> Google serves no personalised ads and uses no personal data to tailor ads to you. Data is processed only to deliver and count the ad and to prevent fraud. The “Programmatic limited ads” option, which would also use local storage for this, is switched off in Clawit!. <span class="todo">[confirm after network capture: device access and advertising ID per age group]</span></li>
-</ul>
-<p><strong>Provider:</strong> Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland (Google AdMob) (<a href="https://policies.google.com/privacy">Google’s privacy policy</a>, <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from apps</a>). For personalised ads, the partners named in the consent form are added. Data may be transferred to Google LLC in the US (see section 5).<br>
-<strong>Legal basis:</strong> for personalised ads and storing or reading information on your device, your consent (Art. 6(1)(a) GDPR and § 25(1) TDDDG). For limited ads, Art. 6(1)(f) GDPR. My legitimate interest: the game is free and funded by videos you choose to start, which have to be delivered, counted and protected against fraud. Only what is needed to play the video you started is stored for this (§ 25(2) no. 2 TDDDG). You may object to this processing (section 6); the simplest way is not to watch the videos.<br>
-<strong>Retention:</strong> set by Google, see <a href="https://policies.google.com/technologies/retention">how long Google keeps data</a>.<br>
-<strong>Withdrawal:</strong> any time in Settings ▸ Privacy ▸ Ad privacy choices and in iOS Settings ▸ Privacy &amp; Security ▸ Tracking. On Android you can reset or delete the advertising ID in the system settings.</p>
+<h3>9. What stays on your device</h3>
+<p>Daily reminders are local notifications (no push server). Sharing a win opens your system’s share sheet; Clawit! does not learn what you share. Your year of birth and settings stay on the device.</p>
 
-<h3>3.5 Crash reports</h3>
-<p>When Clawit! crashes or hits an error, a report is sent so I can find and fix it. It contains:</p>
-<ul>
-  <li>the error message and the place in the code,</li>
-  <li>the last steps in the app before the error (internal log lines),</li>
-  <li>device model, OS and app version.</li>
-</ul>
-<p>Before sending, the app removes the player ID, the device name and every log line containing an identifier (player, install or advertising ID). The Sentry component creates its own random install ID on your device (not the one from section 3.1); the app does not send it. Only in a crash deep in the system (not in the game code) can the component attach it to the report itself. Sentry then removes it before storing, so I cannot see how many devices an error affects. No screenshots or screen recordings are sent. Your IP address is necessarily transmitted when sending; Sentry derives the country from it and does not store the IP address itself.</p>
-<p><strong>Provider:</strong> Functional Software, Inc. (Sentry), USA, as processor; data stored in the EU (Frankfurt) (<a href="https://sentry.io/privacy/">Sentry’s privacy policy</a>). Access from the US cannot be ruled out (see section 5).<br>
-<strong>Legal basis:</strong> Art. 6(1)(f) GDPR. My legitimate interest is a stable and secure app. You may object (section 6). A crash report is kept on your device and sent on the next start, because the app is terminated at the moment of the crash; without this storage every report would be lost (§ 25(2) no. 2 TDDDG). There are no usage or session statistics through Sentry.<br>
-<strong>Retention:</strong> at most 30 days.</p>
+<h3>10. This website</h3>
+<p>Hosted on GitHub Pages (GitHub Inc., USA), which processes your IP address for technical reasons. The page sets no cookies and loads no external content.</p>
 
-<h3>3.6 New content</h3>
-<p>Clawit! downloads new prizes and sets from a content server without an app update. For technical reasons your IP address, the time and the requested file are processed. No player ID is sent. The content server has locations worldwide and serves you from the nearest one, so in Europe from a European location.</p>
-<p><strong>Provider:</strong> BunnyWay d.o.o. (bunny.net), Slovenia, as processor (<a href="https://bunny.net/privacy/">bunny.net’s privacy policy</a>). The files themselves are stored in Frankfurt.<br>
-<strong>Legal basis:</strong> Art. 6(1)(b) GDPR for delivering the content the app requests for your game. For access logs, Art. 6(1)(f) GDPR; my legitimate interest is operating the content server securely.<br>
-<strong>Retention:</strong> access logs 3 days, with the IP address shortened. <span class="todo">[confirm pull zone logging setting]</span></p>
+<h3>11. Your rights</h3>
+<p>You have the right of access, rectification, erasure, restriction, data portability and objection (Art. 15–21 GDPR), and may withdraw consent at any time (Art. 7(3)). The quickest way to erase everything is <strong>Options ▸ Delete save</strong>, which deletes your anonymous account and save on the server (if offline, as soon as the device is back online). Data held by GameAnalytics, Sentry and Google is not linked to a name; email me to have it erased, or contact Google directly about ad data. You may also lodge a complaint with a data protection supervisory authority.</p>
 
-<h3>3.7 What stays on your device</h3>
-<ul>
-  <li><strong>Reminders:</strong> the daily reminder is a local notification on your device. There is no push server.</li>
-  <li><strong>Sharing:</strong> sharing a win opens your system’s share sheet. What you share there, and with whom, is your choice. Clawit! does not learn about it.</li>
-  <li>Your year of birth (see 3.2) and settings such as sound, vibration, language and camera stay on the device. Whether your operating system includes app data in your own device backup (iCloud or Google) is up to you in the system settings.</li>
-</ul>
-
-<h3>3.8 This website</h3>
-<p>This page is served by GitHub Pages. When you open it, GitHub processes your IP address and connection data (page requested, time, browser) to deliver the page and protect it against attacks. GitHub stores the IP address for security purposes.</p>
-<p><strong>Provider:</strong> GitHub, Inc., USA (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s privacy statement</a>). The data is processed in the US (see section 5).<br>
-<strong>Legal basis:</strong> Art. 6(1)(f) GDPR. My legitimate interest is providing this notice publicly and securely.<br>
-<strong>Retention:</strong> set by GitHub according to its security needs; GitHub states no fixed period.<br>
-The page itself sets no cookies, contains no third-party scripts and loads no external content; even the fonts come from the same server.</p>
-
-<h2>4. Retention at a glance</h2>
-<div class="scroll"><table>
-  <tr><th>Data</th><th>Where</th><th>How long</th></tr>
-  <tr><td>Save, player ID, install ID</td><td>Supabase (EU)</td><td>until you delete it or ask me to</td></tr>
-  <tr><td>Server logs, backups</td><td>Supabase (EU)</td><td>at most 7 days</td></tr>
-  <tr><td>Year of birth, settings, privacy answers</td><td>your device only</td><td>until you uninstall</td></tr>
-  <tr><td>Play statistics (events)</td><td>GameAnalytics</td><td>at most 12 months; shortened IP at most 30 days</td></tr>
-  <tr><td>Ads</td><td>Google</td><td>according to Google’s periods</td></tr>
-  <tr><td>Crash reports</td><td>Sentry (EU)</td><td>at most 30 days</td></tr>
-  <tr><td>Content server access logs</td><td>bunny.net</td><td>3 days</td></tr>
-  <tr><td>Access data for this website</td><td>GitHub</td><td>according to GitHub’s security needs</td></tr>
-</table></div>
-
-<h2>5. Transfers outside the EU</h2>
-<p>Sentry, Google and GitHub are US companies or belong to one; Supabase is based in Singapore and the US. Even where data is stored in the EU, it may be accessible from the US, for example for support or maintenance. bunny.net serves requests from outside Europe from locations in other countries. Depending on the recipient, such transfers rely on:</p>
-<ul>
-  <li>the European Commission’s adequacy decision for the EU-US Data Privacy Framework, where the recipient is certified under it (Google LLC, GitHub, Inc., Functional Software, Inc. for Sentry),</li>
-  <li>the adequacy decision for the United Kingdom (GameAnalytics Limited),</li>
-  <li>otherwise the EU Standard Contractual Clauses included in the providers’ data processing agreements (Supabase; for the others as a fallback).</li>
-</ul>
-<p>You can request a copy of the relevant safeguards from me by email; the adequacy decisions are published by the <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en">European Commission</a>.</p>
-
-<h2>6. Your rights and erasure</h2>
-<p>You have the right of access (Art. 15 GDPR), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18) and data portability (Art. 20). You may object to processing based on my legitimate interest (Art. 6(1)(f) GDPR) on grounds relating to your particular situation (Art. 21). You may withdraw consent at any time (Art. 7(3)). Withdrawal applies to the future; processing before it remains lawful.</p>
-<p><strong>Deleting it yourself:</strong> “Settings ▸ Delete Save” deletes, on the server, your game account (player ID and sign-in data) and your stored save, and on your device the save. Your year of birth, settings and privacy answers stay on the device until you uninstall the app; the year of birth deliberately, so the age question cannot simply be answered again. If the device is offline, the app completes the deletion the next time it is online and syncs nothing until then. Not deleted immediately are:</p>
-<ul>
-  <li>server logs and database backups at Supabase, which expire on their own after at most 7 days,</li>
-  <li>data held by GameAnalytics, Sentry, Google and bunny.net, which expires after the periods in section 4.</li>
-</ul>
-<p><strong>Requests by email:</strong> write to <a href="mailto:clawit.app@gmail.com">clawit.app@gmail.com</a>. So that I can find your data, please include your player ID. It is on the last line of Settings; tapping it copies it. I reply within one month.</p>
-<p>Data held by GameAnalytics, Sentry, Google and bunny.net carries no player ID, and I cannot link it to a person. I can therefore only have it erased or report on it if you give me additional details that allow it to be identified (Art. 11 GDPR). You can also contact Google directly about ad data.</p>
-<p><strong>Complaints:</strong> you may lodge a complaint with any data protection supervisory authority. The one responsible for me is the Hamburg Commissioner for Data Protection and Freedom of Information, Ludwig-Erhard-Straße 22, 20459 Hamburg, Germany (<a href="https://datenschutz-hamburg.de">datenschutz-hamburg.de</a>).</p>
-<p><strong>Obligation to provide data:</strong> you do not have to provide any data. Without a year of birth the app starts no ads. Without an internet connection you keep playing; the cloud save catches up once you are back online.</p>
-
-<h2>7. Changes</h2>
+<h3>12. Changes</h3>
 <p>Anything that changes how the app handles data will be added here before it ships.</p>
 
 </body>
